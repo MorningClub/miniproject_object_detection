@@ -1,0 +1,18 @@
+Sources:
+
+Training with fiftyone dataset:
+https://towardsdatascience.com/stop-wasting-time-with-pytorch-datasets-17cac2c22fa8
+
+Torchvision models:
+https://pytorch.org/vision/stable/models.html
+
+COCO dataset:
+https://towardsdatascience.com/how-to-work-with-object-detection-datasets-in-coco-format-9bf4fb5848a4
+
+
+
+Example of extracting images from avi, and creating avi from images using ffmpeg:
+
+ffmpeg -y -i "Video00002_Ano/Video00002_ambient.avi" "Video00002_Ano/data/frame_%06d.PNG" 
+
+ffmpeg -i "frame_%06d.jpg" -codec copy "test.avi"
